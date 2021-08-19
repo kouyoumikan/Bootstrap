@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap3</title>
+
+    <!-- bootstrapのテンプレート使用(自動的にレスポンシブデザインが適用されている) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        .box1 {
+            background-color: bisque;
+        }
+        .box2 {
+            background-color: darkgray;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- h1~6はフォントやサイズがBootstrapように変更されている -->
+        <h1>見出し1</h1>
+        <h2>見出し2</h2>
+        <h3>見出し3</h3>
+        <h4>見出し4</h4>
+        <h5>見出し5</h5>
+        <h6>見出し6</h6>
+
+        <br>
+
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+        </ul>
+
+        <br>
+        <!-- class="table"を設定すると、自動でテーブルが作成される(自動的にレスポンシブデザインが適用されている) -->
+        <table class="table">
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- class="table-dark"を設定すると、黒いテーブルが作成される -->
+        <table class="table table-dark">
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- class="table-striped"を設定すると、ストライプのテーブルが作成される -->
+        <table class="table table-striped">
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- class="table-hover"を設定すると、マウス状が色変更したテーブルが作成される -->
+        <table class="table table-hover">
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+            <tr>
+                <th>head</th>
+                <td>body</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- codeの値がピンク色に強調される -->
+        <p>HTMLの段落は<code>p</code>です。</p>
+
+        <!-- codeの値がボックス内に表示される -->
+        <pre>
+            <code>
+                document.write('javascript');
+            </code>
+        </pre>
+
+        <!-- キーボードの値が黒色ボックスで強調される -->
+        <p><kbd>Enter</kbd>キーを押して下さい。</p>
+
+        <br>
+        <!-- 「picsum」サイトから、ダミーの画像を指定したサイズで配置する -->
+        <!-- 大きな画像を配置する場合、class="img-fluid"とするとレスポンシブな画像になる -->
+        <img class="img-fluid" src="https://picsum.photos/1200/1200" alt="">
+        <img src="https://picsum.photos/200/200" alt="">
+        <!-- class="img-thumbnail"とすると、画像の周りにサムネイルの枠をつける -->
+        <img class="img-thumbnail" src="https://picsum.photos/900/900" alt="">
+        <!-- 大きな画像を配置する場合、class="img-fluid rounded"とすると四隅が丸い画像になる -->
+        <img class="img-fluid rounded" src="https://picsum.photos/1200/1200" alt="">
+
+    </div>
+</body>
+</html>
