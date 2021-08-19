@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap2</title>
+
+    <!-- bootstrapのテンプレート使用(自動的にレスポンシブデザインが適用されている) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        .box1 {
+            background-color: bisque;
+        }
+        .box2 {
+            background-color: darkgray;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- rowグリッドは12分割なので、col1~12の値でブロックの大きさを設定する -->
+        <div class="row">
+            <div class="box1 col-2">
+                box1
+            </div>
+            <div class="box2 col-2">
+                box2
+            </div>
+            <div class="box1 col-2">
+                box3
+            </div>
+            <div class="box2 col-2">
+                box4
+            </div>
+            <div class="box1 col-2">
+                box5
+            </div>
+            <div class="box2 col-2">
+                box6
+            </div>
+        </div>
+
+        <br>
+        <!-- col-sm-1~12に設定すると、540pxでboxが上下に重なるように設定できる -->
+        <div class="row">
+            <div class="box1 col-sm-2">
+                box1
+            </div>
+            <div class="box2 col-sm-8">
+                box2
+            </div>
+            <div class="box1 col-sm-2">
+                box3
+            </div>
+        </div>
+
+        <br>
+        <!-- col-md-1~12に設定すると、720pxでboxが上下に重なるように設定できる -->
+        <div class="row">
+            <div class="box1 col-md-2">
+                box1
+            </div>
+            <div class="box2 col-md-8">
+                box2
+            </div>
+            <div class="box1 col-md-2">
+                box3
+            </div>
+        </div>
+
+        <br>
+        <!-- col-lg-1~12に設定すると、960pxでboxが上下に重なるように設定できる -->
+        <div class="row">
+            <div class="box1 col-lg-2">
+                box1
+            </div>
+            <div class="box2 col-lg-8">
+                box2
+            </div>
+            <div class="box1 col-lg-2">
+                box3
+            </div>
+        </div>
+
+        <br>
+        <!-- col-xl-1~12に設定すると、1140pxでboxが上下に重なるように設定できる -->
+        <div class="row">
+            <div class="box1 col-xl-2">
+                box1
+            </div>
+            <div class="box2 col-xl-8">
+                box2
+            </div>
+            <div class="box1 col-xl-2">
+                box3
+            </div>
+        </div>
+
+        <br>
+        <!-- colを複数のディスプレイサイズで設定できる -->
+        <div class="row">
+            <div class="box1 col-lg-2 col-md-4">
+                box1
+            </div>
+            <div class="box2 col-md-8">
+                box2
+            </div>
+            <div class="box1 col-lg-2">
+                box3
+            </div>
+        </div>
+
+        <br>
+        <!-- offset-1~11で１２分割の足りない余白を左に入れる設定ができる(boxの中央寄せのような見た目) -->
+        <div class="row">
+            <div class="box1 col-8 offset-2">
+                box1
+            </div>
+            <div class="box2 col-12">
+                box2
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
