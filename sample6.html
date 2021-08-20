@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap1</title>
+
+    <!-- bootstrapのテンプレート使用(自動的にレスポンシブデザインが適用されている) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- cssのスタイルシート -->
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: grey;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- class="box border-xxx"で、ボックスの枠に枠線を付ける設定 -->
+        <div class="box border"></div>
+        <div class="box border-top"></div>
+        <div class="box border-end"></div>
+        <div class="box border-bottom"></div>
+        <div class="box border-start"></div>
+        <br>
+        <br>
+        <div class="box border-1"></div>
+        <div class="box border-2"></div>
+        <div class="box border-3"></div>
+        <div class="box border-4"></div>
+        <div class="box border-5"></div>
+        <br>
+        <br>
+        <div class="box bg-primary"></div>
+        <div class="box bg-secondary"></div>
+        <div class="box bg-success"></div>
+        <div class="box bg-danger"></div>
+        <div class="box bg-warning"></div>
+        <div class="box bg-info"></div>
+        <div class="box bg-light"></div>
+        <div class="box bg-dark"></div>
+        <div class="box bg-white"></div>
+        <br>
+        <br>
+        <img src="https://picsum.photos/200/200" class="rounded" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-top" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-end" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-bottom" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-start" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-circle" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-pill" alt="...">
+        <br>
+        <br>
+        <img src="https://picsum.photos/200/200" class="rounded-0" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-1" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-2" alt="...">
+        <img src="https://picsum.photos/200/200" class="rounded-3" alt="...">
+        
+        <br>
+        <br>
+        <!-- class="shadow-xxx"で、ボックスに影を付ける設定 -->
+        <div class="box shadow"></div>
+        <div class="box shadow-sm"></div>
+        <div class="box shadow p-3"></div>
+        <div class="box shadow-lg"></div>
+        <div class="box shadow-none"></div>
+        <br>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+
+        <br>
+        <br>
+        <!-- class="position-relative"で、ボックス全体にリンクを付ける設定 -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://picsum.photos/200/200" alt="カード画像の説明" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">伸長リンク付きカード</h5>
+              <p class="card-text">カードのタイトルに基づいてカードの内容の大部分を占める簡単なサンプルテキスト。</p>
+              <a href="#" class="btn btn-primary stretched-link">リンクボタン</a>
+            </div>
+          </div>
+        <br>
+        <div class="d-flex position-relative">
+            <img src="https://picsum.photos/200/200" alt="..." class="flex-shrink-0 me-3">
+            <div>
+              <h5 class="mt-0">伸長リンク付きカスタムコンポーネント</h5>
+              <p>これは、カスタムコンポーネントのプレースホルダコンテンツ。...</p>
+              <a href="#" class="stretched-link">リンク</a>
+            </div>
+        </div>
+        <br>
+        <div class="row g-0 bg-light position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="https://picsum.photos/200/200" alt="..." class="w-100">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0">
+              <h5 class="mt-0">伸長リンク付きのグリッド列</h5>
+              <p>もう一つのカスタムコンポーネントのプレースホルダコンテンツの別の実例。...</p>
+              <a href="#" class="stretched-link">リンク</a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- class="clearfix"で、floatを簡単にクリアできるようにする設定 -->
+        <div class="bg-info clearfix p-3">
+            <button type="button" class="btn btn-secondary float-start">行頭揃えボタン</button>
+            <div class="clearfix"></div>
+            <button type="button" class="btn btn-secondary float-end">行末揃えボタン</button>
+        </div>
+        <br>
+        <div class="bg-info clearfix p-3">
+            <button type="button" class="btn btn-secondary float-start">行頭揃えボタン</button>
+            <button type="button" class="btn btn-secondary float-end">行末揃えボタン</button>
+        </div>
+
+        <br>
+        <br>
+        <!-- class="overflow"で、コンテンツを要素からはみ出させる設定 -->
+        <div class="overflow-auto">...</div>
+        <div class="overflow-hidden">...</div>
+        <div class="overflow-visible">...</div>
+        <div class="overflow-scroll">...</div>
+        <br>
+        <div class="badge bg-primary text-wrap" style="width: 6rem;">
+            このテキストは折り返す必要がある。
+        </div>
+        <br>
+        <div class="text-nowrap" style="width: 8rem;">
+            折り返したくない文字をココに入れると、ハミ出してしまいます。
+        </div>
+        <br>
+        <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+        <br>
+        <br>
+        <!-- class=".img-fluid"で、レスポンシブイメージ画像を軽量スタイルを追加する設定 -->
+        <img src="https://picsum.photos/1200/1200" alt="..." class="img-fluid">
+        <br>
+
+        <br>
+        <br>
+        <!-- class="embed-responsive"で、動画やスライドショーをページに埋め込む設定
+        （動画の場合は、共有押下後の埋め込みからタグをコピペして設定する） -->
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FtkRIuWTf0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="ratio ratio-1x1">
+            <div>1x1
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FtkRIuWTf0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="ratio ratio-4x3">
+            <div>4x3
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FtkRIuWTf0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="ratio ratio-16x9">
+            <div>16x9
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FtkRIuWTf0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="ratio ratio-21x9">
+            <div>21x9
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FtkRIuWTf0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        
+
+    </div>
+    
+</body>
+</html>
